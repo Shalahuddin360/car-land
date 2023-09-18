@@ -21,7 +21,7 @@
 }
 @layer base {
   body {
-    @apply text-primary bg-body;
+    @apply text-primary bg-body overflow-x-hidden;
   }
   p {
     @apply text-secondary;
