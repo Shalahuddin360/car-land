@@ -40,12 +40,12 @@ export default function Header() {
   });
   // console.log(header);
   return (
-    <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4'} fixed w-full max-w-[1920px] transition-all duration-150px text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
+    <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4'} fixed w-full max-w-[1920px] mx-auto transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
       <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
          <div className="flex justify-between items-center px-4">
           {/* logo  */}
            <Link 
-           to="home" 
+            to="home" 
             smooth={desktopMode}
             spy={true}
             className="cursor-pointer"
@@ -106,14 +106,14 @@ export default function Header() {
           spy={true}
           >
           Contact
-            </Link>
-          <Link className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto" to="/"
+         </Link>
+          <Link className="xl:hidden btn btn-primary  btn-sm max-w-[164px] mx-auto cursor-pointer" to="/"
           activeClass="active"
           smooth={desktopMode}
           spy={true}
           >
               See All Cars
-            </Link>
+          </Link>
             <SearchMobile/>
          </nav>
       </div>
