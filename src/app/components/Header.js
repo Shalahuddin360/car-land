@@ -11,7 +11,7 @@ import SearchMobile from "./SearchMobile";
 export default function Header() {
   const {setSearchActive} = useContext(SearchContext)
   const [header,setHeader] = useState(false)
-  const [nav,setNav] = useState(false)
+  const [nav,setNav] = useState(false);
   const desktopMode = useMediaQuery({
     query :'(min-width:1300px)',
   });
@@ -32,7 +32,7 @@ export default function Header() {
     }
    };
   //  add event listener 
-  window.addEventListener('scroll',handleScroll);
+   window.addEventListener('scroll',handleScroll);
   //remove event listener 
   return ()=>{
     window.removeEventListener('scroll',handleScroll)
@@ -40,7 +40,7 @@ export default function Header() {
   });
   // console.log(header);
   return (
-    <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4'} fixed w-full max-w-[1920px] mx-auto transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
+    <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4'} fixed w-full max-w-[1920px] mx-auto transition-all duration-150 z-50 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
       <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
          <div className="flex justify-between items-center px-4">
           {/* logo  */}
@@ -98,7 +98,7 @@ export default function Header() {
           spy={true}
           >
             Testimonials
-            </Link>
+          </Link>
 
           <Link className="cursor-pointer" to="contact"
           activeClass="active"
@@ -113,7 +113,7 @@ export default function Header() {
           spy={true}
           >
               See All Cars
-          </Link>
+         </Link>
             <SearchMobile/>
          </nav>
       </div>

@@ -19,6 +19,11 @@
   color: #1e1f23 !important;
   font-weight: bold !important;
 }
+/* swiper styles  */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullet {
+  background-color: #f13024;
+}
 @layer base {
   body {
     @apply text-primary bg-body overflow-x-hidden;

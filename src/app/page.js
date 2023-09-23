@@ -10,7 +10,7 @@ import Why from './components/Why';
 
 export default function Home() {
   return (
-  <main className='max-w-[1920px] bg-white mx-auto relative'>
+  <main className='max-w-[1920px] mx-auto bg-white'>
     <Header/>
     <Hero/>
     <Cars/>
@@ -20,7 +20,7 @@ export default function Home() {
     <Cta/>
     <Footer/>
     <BackTopButton/>
-    <div className='h-[400px]'></div>
+    {/* <div className='h-[400px]'></div> */}
     </main>
   )
 }
