@@ -96,10 +96,10 @@ export default function Footer() {
           {/* Newsletter */}
           <div className="flex-1">
               <h3 className="h3 font-bold mb-8">Newsletter</h3>
-               <div className="ml-9 text-secondary">Search Our Inventory</div>
-                <form className="flex gap-x-2 h-14">
-               <input type="text" placeholder="Your Email :" className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent"></input>
-                 <button type="submit" className="btn btn-sm bg-accent w-24 ">Submit</button>
+               <div className="text-secondary mb-9">Search Your Cars</div>
+                <form className="flex gap-x-2 h-14 ">
+               <input type="email" placeholder="Your Email :" className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent"></input>
+                 <button type="submit" className="btn btn-sm bg-accent w-24 hover:bg-accent-hover ">Submit</button>
                 </form>
             </div>
         </motion.div>
